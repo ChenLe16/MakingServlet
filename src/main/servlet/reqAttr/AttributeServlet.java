@@ -36,6 +36,7 @@ public class AttributeServlet extends HttpServlet {
             req.setAttribute("age", age);
         }
 
+        // can forward to servlet as well
         getServletContext().getRequestDispatcher("/name.jsp").forward(req, resp);
     }
 }
