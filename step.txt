@@ -1,0 +1,40 @@
+Step 1: Create maven project
+- select JDK 1.8*
+- tick "Create from archetype"
+- select "maven-archetype-webapp"
+- then create the project
+
+
+Step 2: Package war file
+- check if pom.xml has <package>war</package>
+- Click on the "Maven" on right side
+- look for "package", then double click
+
+
+Step 3: Install Smart Tomcat
+- Preferences > Plugins > Marketplace > "Smart Tomcat" > install and apply
+
+
+Step 4: Configure Apache Tomcat
+- Add Configuration > + > Smart Tomcat > Configuration (Tomcat Server)
+- Preferences > Tomcat Server > + > select downloaded Apache Tomcat file > Apply > OK
+- back to main panel > Tomcat Server > select the relative version
+- Deployment Directory > choose the webapp file of the project (src > main > webapp)
+- Apply > OK
+
+
+Step 5: Run Tomcat
+- right top corner, run Tomcat configuration.
+- test by entering url - localhost:8080/PROJECT_NAME
+- for this case - localhost:8080/SimpleWebApp
+
+
+Step 6: Deploy war file
+- Maven (right side of the console)
+- double click "compile", then "package"
+- once complete, check if war file has been created. (target > PROJECTNAME.war)
+- copy the war file, paste in apache-tomcat downloaded file > webapps.
+
+
+Step 7: Done
+- run Tomcat, then type in the url to check if everything is okay.
