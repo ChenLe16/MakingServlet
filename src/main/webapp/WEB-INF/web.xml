@@ -13,7 +13,7 @@
 
   <servlet>
     <servlet-name>ContextServlet2</servlet-name>
-    <servlet-class>param.ContextServlet2</servlet-class>
+    <servlet-class>main.servlet.param.ContextServlet2</servlet-class>
     <init-param>
       <param-name>authorizationToken</param-name>
       <param-value>Ada</param-value>
