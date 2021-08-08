@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page isELIgnored="false" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,8 @@
 <body>
 
 <h1>Register Account</h1>
+
+<p>${error}</p>
 <form method="post" action="/register">
 
     <label for="email">Email: </label>
