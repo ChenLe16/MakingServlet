@@ -9,10 +9,10 @@ import java.io.IOException;
 
 @WebServlet(
         name = "DeclarationServlet",
-        urlPatterns = "/declare"
+        urlPatterns = "/directive"
 )
 
-public class DeclarationServlet extends HttpServlet {
+public class DirectiveServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Post method");
@@ -20,6 +20,6 @@ public class DeclarationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        getServletContext().getRequestDispatcher("/declaration.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/directive.jsp").forward(req, resp);
     }
 }
